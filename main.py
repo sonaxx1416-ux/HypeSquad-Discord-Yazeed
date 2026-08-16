@@ -124,12 +124,12 @@ if __name__ == "__main__":
     user_password = input(Fore.MAGENTA + "Enter your password: " + Fore.WHITE).strip()
     
     print(Fore.CYAN + "\nSelect Hypesquad House:")
-    print(Fore.YELLOW + "  [1] Bravery (Purple)")
-    print(Fore.YELLOW + "  [2] Brilliance (Red)")
-    print(Fore.YELLOW + "  [3] Balance (Green)")
+    print(Fore.MAGENTA + "  [1] Bravery (Purple)")
+    print(Fore.RED + "  [2] Brilliance (Red)")
+    print(Fore.GREEN + "  [3] Balance (Green)")
     
     try:
-        house_choice = int(input(Fore.MAGENTA + "Enter choice (1-3): " + Fore.WHITE).strip())
+        house_choice = int(input(Fore.YELLOW + "Enter choice (1-3): " + Fore.WHITE).strip())
         if house_choice in [1, 2, 3]:
             change_hypesquad_with_real_script(user_email, user_password, house_choice)
         else:
